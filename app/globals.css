@@ -17,6 +17,8 @@ html, body {
   padding: 0;
   background: var(--cream);
   color: var(--ink);
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -417,6 +419,8 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
 }
 
 @media (max-width: 600px) {
+  img, svg, video { max-width: 100%; height: auto; }
+
   .top-bar {
     flex-direction: column; align-items: flex-start; gap: 4px;
     padding: 8px 16px; font-size: 9px; letter-spacing: 0.12em;
@@ -432,14 +436,19 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
 
   .hero { padding: 40px 16px 32px; }
   .hero-grid { gap: 32px; }
-  h1.hero-title { font-size: clamp(40px, 13vw, 64px); }
+  h1.hero-title { font-size: clamp(40px, 13vw, 64px); overflow-wrap: break-word; }
   .hero-sub { font-size: 16px; margin-bottom: 24px; }
   .cta-row { flex-wrap: wrap; gap: 12px; }
-  .blake-card { padding: 12px; transform: rotate(1deg); }
+  .blake-card {
+    padding: 12px; transform: none;
+    box-shadow: 6px 6px 0 var(--ink);
+    margin-right: 6px;
+  }
+  .blake-card:hover { transform: none; }
   .blake-card .photo { min-height: 320px; }
   .blake-card .stamp {
-    width: 84px; height: 84px; font-size: 10px;
-    top: -12px; right: -12px;
+    width: 78px; height: 78px; font-size: 10px;
+    top: -8px; right: -4px;
   }
 
   section { padding: 64px 16px; }
@@ -448,14 +457,16 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
   .section-label { font-size: 10px; letter-spacing: 0.15em; }
   .hero-sub { font-size: 16px; }
 
-  .exhibit-section { padding: 56px 16px; }
+  .exhibit-section { padding: 56px 16px; overflow: hidden; }
   .exhibit-inner { gap: 32px; }
   .exhibit-copy h2 { font-size: clamp(28px, 8vw, 44px); }
   .exhibit-copy p { font-size: 16px; }
+  .discord-wrap { margin-right: 8px; }
   .discord-wrap .exhibit-stamp {
-    top: -14px; right: -6px; font-size: 13px; padding: 4px 10px;
+    top: -12px; right: 4px; font-size: 12px; padding: 4px 10px;
+    transform: rotate(2deg);
   }
-  .discord-card { padding: 16px; box-shadow: 6px 6px 0 var(--ink); }
+  .discord-card { padding: 16px; box-shadow: 4px 4px 0 var(--ink); }
   .discord-footnote { flex-direction: column; gap: 4px; }
 
   .marquee-track { font-size: 24px; gap: 24px; padding: 12px 0; }
@@ -467,9 +478,10 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
   .stake-card { padding: 24px; }
   .stake-card .stake-num { font-size: 64px; }
   .stake-card .stake-title { font-size: 22px; }
-  .testimonial { padding: 20px; }
+  .testimonial { padding: 20px; box-shadow: 4px 4px 0 var(--ink); }
   .testimonial .quote { font-size: 18px; }
-  .testimonial.tilt-l, .testimonial.tilt-r { transform: rotate(0); }
+  .testimonial.tilt-l, .testimonial.tilt-r { transform: none; }
+  .testimonial:hover { transform: none; }
 
   .plan-step {
     grid-template-columns: 1fr; gap: 8px; padding: 24px 0;
@@ -479,8 +491,12 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
   .plan-step .body h3 { font-size: 22px; }
   .plan-step .body p { font-size: 15px; }
 
-  .classified-stamp { font-size: 18px; padding: 6px 14px; }
-  .redacted-doc { padding: 24px; font-size: 13px; box-shadow: 6px 6px 0 var(--blood); }
+  .classified-stamp { font-size: 18px; padding: 6px 14px; transform: rotate(-2deg); }
+  .redacted-doc {
+    padding: 24px; font-size: 13px;
+    box-shadow: 4px 4px 0 var(--blood);
+    margin-right: 4px; word-break: break-word;
+  }
   .redacted-doc .header, .redacted-doc .footer {
     flex-direction: column; gap: 6px; align-items: flex-start;
   }
