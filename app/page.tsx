@@ -224,18 +224,18 @@ export default function HomePage() {
           </div>
           <h2 className="section-title reveal">Even <span className="italic">Jay&apos;s mom</span> is on the record.</h2>
           <p className="hero-sub reveal" style={{ maxWidth: "62ch" }}>
-            A panel of non medical professionals, the brothers of Mu Eta, and one very real mom have weighed in. All quotes lightly paraphrased. All concern: 100% authentic.
+            A panel of medical professionals, the brothers of Mu Eta, and one very real mom have weighed in. All quotes lightly paraphrased. All concern: 100% authentic.
           </p>
 
           <div className="testimonials-grid">
             <div className="testimonial tilt-l reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">I have not personally examined Blake, but I am willing to, in this hypothetical scenario, gesture at a clipboard and nod thoughtfully.</div>
+              <div className="quote">I have not personally examined Blake, but I am willing to, in this hypothetical scenario, say Blake should go see a doctor soon.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
-                  <div className="name">Dr. Smiling Stock Photo, MD</div>
-                  <div className="title">General Practitioner (Stock)</div>
+                  <div className="name">Dr. James Kos, MD</div>
+                  <div className="title">Greek Doctor</div>
                 </div>
               </div>
             </div>
@@ -258,6 +258,39 @@ export default function HomePage() {
                 <div>
                   <div className="name">A Brother of Mu Eta</div>
                   <div className="title">Chapter Brother</div>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial tilt-r reveal">
+              <div className="stars">★★★★★</div>
+              <div className="quote">Please, I am not Blake, please stop asking me to go to the doctor. I am, however, Blake&apos;s friend, and I am begging you, for the love of all that is good and decent, make the appointment.</div>
+              <div className="credit">
+                <div className="avatar">PHOTO</div>
+                <div>
+                  <div className="name">Joe P.</div>
+                  <div className="title">Rush Aficionado</div>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial tilt-l reveal">
+              <div className="stars">★★★★★</div>
+              <div className="quote">Blake, if you make a doctor appointment, you might actually win poker night. Like me. The correlation between your medical neglect and your inability to read a flop is, at this point, statistically undeniable.</div>
+              <div className="credit">
+                <div className="avatar">PHOTO</div>
+                <div>
+                  <div className="name">John</div>
+                  <div className="title">The Goose</div>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial tilt-r reveal">
+              <div className="stars">★★★★★</div>
+              <div className="quote">From a purely clinical standpoint, I have no jurisdiction here. From a brotherly standpoint, however, I am prepared to drive Blake to the appointment, sit in the waiting room, and kiss his cheek.</div>
+              <div className="credit">
+                <div className="avatar">PHOTO</div>
+                <div>
+                  <div className="name">Alex</div>
+                  <div className="title">Designated Driver &middot; Volunteer &middot; unc</div>
                 </div>
               </div>
             </div>
@@ -303,7 +336,7 @@ export default function HomePage() {
           <div className="classified-stamp">⚠ Classified Briefing</div>
           <h2 className="section-title reveal">If Blake does not comply, <span className="italic">the following will occur:</span></h2>
           <p className="hero-sub reveal" style={{ color: "rgba(242,233,213,0.78)", maxWidth: "60ch" }}>
-            We are legally and emotionally unable to disclose the specifics. We are also pretty sure we haven&apos;t decided on the specifics yet. But trust us, and we cannot stress this part enough, it is something. The brothers have convened. The brothers have voted. The motion passed.
+            We are legally and emotionally unable to disclose the specifics. But trust us, and we cannot stress this part enough, it is something. The brothers have convened. The brothers have voted. The motion passed.
           </p>
 
           <div className="redacted-doc reveal">
@@ -318,7 +351,7 @@ export default function HomePage() {
               Should the Subject (&ldquo;Blake&rdquo;) fail to attend an appointment by the designated deadline, the Coalition is authorized to initiate <span className="black">a slow-burn, deeply uncomfortable</span> response, which may include but is not limited to: <span className="black">an intervention involving baked goods</span>, <span className="black">passive-aggressive Spotify playlist</span>, and, in worst-case scenarios, <span className="black">the silent treatment from the houseplant</span>.
             </p>
             <p>
-              Further escalation may involve <span className="black">a heartfelt letter read aloud at brunch</span>, the public deployment of <span className="black">embarrassing childhood photos</span>, the controlled release of <span className="black">certain photographs obtained during the trip to that one island, the name of which we are contractually unable to print here</span>, and ultimately <span className="black">[redacted, see Appendix C, page 47]</span>.
+              Further escalation may involve <span className="black">a heartfelt letter read aloud at brunch</span>, the public deployment of <span className="black">embarrassing childhood photos</span>, the controlled release of <span className="black">certain </span>photographs <span className="black">obtained during the trip to that one </span>island,<span className="black"> the name of which we are </span><span className="black"> contractually unable to print here</span>, and ultimately <span className="black">[redacted, Appendix C, page 47]</span>.
             </p>
             <p>The Coalition wishes to be clear: this is not a threat. <em>It is a promise.</em> A very loving, deeply concerned, slightly unhinged promise.</p>
             <div className="footer">
