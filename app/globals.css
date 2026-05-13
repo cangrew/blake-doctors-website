@@ -434,21 +434,32 @@ footer .disclaimer { grid-column: 1 / -1; margin-top: 32px; padding-top: 24px; b
   .nav .logo .seal { width: 24px; height: 24px; font-size: 10px; }
   .nav .cta { padding: 8px 12px; font-size: 11px; letter-spacing: 0.06em; }
 
-  .hero { padding: 40px 16px 32px; }
-  .hero-grid { gap: 32px; }
-  h1.hero-title { font-size: clamp(40px, 13vw, 64px); overflow-wrap: break-word; }
-  .hero-sub { font-size: 16px; margin-bottom: 24px; }
+  .hero { padding: 40px 16px 32px; overflow: hidden; }
+  .hero-grid { gap: 32px; max-width: 100%; }
+  .hero-grid > * { min-width: 0; max-width: 100%; }
+  .eyebrow {
+    font-size: 9px; letter-spacing: 0.15em; padding: 6px 10px;
+    max-width: 100%; flex-wrap: wrap; white-space: normal; line-height: 1.4;
+  }
+  h1.hero-title {
+    font-size: clamp(36px, 11vw, 56px);
+    overflow-wrap: break-word; word-break: break-word; hyphens: auto;
+    max-width: 100%;
+  }
+  h1.hero-title .wobble { animation: none; }
+  .hero-sub { font-size: 16px; margin-bottom: 24px; max-width: 100%; }
   .cta-row { flex-wrap: wrap; gap: 12px; }
+  .btn-primary, .btn-ghost { box-shadow: 4px 4px 0 var(--blood); }
   .blake-card {
     padding: 12px; transform: none;
     box-shadow: 6px 6px 0 var(--ink);
-    margin-right: 6px;
+    margin: 0 6px 0 0; max-width: calc(100% - 6px);
   }
   .blake-card:hover { transform: none; }
   .blake-card .photo { min-height: 320px; }
   .blake-card .stamp {
-    width: 78px; height: 78px; font-size: 10px;
-    top: -8px; right: -4px;
+    width: 72px; height: 72px; font-size: 10px;
+    top: -6px; right: -2px;
   }
 
   section { padding: 64px 16px; }
