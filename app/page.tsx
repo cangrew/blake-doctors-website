@@ -211,7 +211,7 @@ export default function HomePage() {
           </div>
           <h2 className="section-title reveal">Every metric just flipped, <span className="italic">in his favor.</span></h2>
           <p className="hero-sub reveal" style={{ color: "rgba(242,233,213,0.75)", maxWidth: "60ch" }}>
-            Independently verified by a panel of three friends and a group chat formerly called &ldquo;Blake&apos;s Knee Situation 2026&rdquo;, recently renamed &ldquo;WE ARE SO BACK&rdquo;. The numbers do not lie. The numbers are, for once, deeply optimistic.
+            Independently verified by a panel of three friends and a group chat formerly called &ldquo;Blake&apos;s Cough Situation 2026&rdquo;, recently renamed &ldquo;WE ARE SO BACK&rdquo;. The numbers do not lie. The numbers are, for once, deeply optimistic.
           </p>
 
           <div className="stakes-grid">
