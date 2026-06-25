@@ -311,11 +311,11 @@ export default function HomePage() {
             </div>
             <div className="testimonial tilt-r reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">Guys. I&apos;m genuinely overwhelmed. The campaign, the testimonials, a literal website &mdash; I had no idea you all cared this much about me booking my appointment. Truly, thank you, it means everything&hellip; wait. It&apos;s Blake&apos;s appointment? This is about Blake? Right. Yes. Obviously. I knew that. I&apos;ll still take the cake though.</div>
+              <div className="quote">Guys. I&apos;m genuinely overwhelmed. The campaign, the testimonials, a literal website, I had no idea you all cared this much about me booking my appointment. Truly, thank you, it means everything&hellip; wait. It&apos;s Blake&apos;s appointment? This is about Blake? Right. Yes. The Alex Kos Fallacy&hellip;</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
-                  <div className="name">Alex</div>
+                  <div className="name">Alex Kos</div>
                   <div className="title">Designated Driver &middot; Believed This Was About Him</div>
                 </div>
               </div>
