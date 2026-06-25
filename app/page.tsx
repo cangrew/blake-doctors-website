@@ -8,7 +8,7 @@ function pad(n: number) {
 
 export default function HomePage() {
   const [clock, setClock] = useState("--:--:--");
-  const [day, setDay] = useState(217);
+  const [day, setDay] = useState(1);
   const [stake0, setStake0] = useState(847);
   const marqueeRef = useRef<HTMLDivElement>(null);
 
@@ -59,19 +59,19 @@ export default function HomePage() {
       <div className="top-bar">
         <span>
           <span className="pulse-dot" />
-          EMERGENCY BROADCAST &middot; DAY {day} OF THE STANDOFF &middot; RESPONSE RECEIVED: &ldquo;NUH UH&rdquo;
+          VICTORY BULLETIN &middot; HE BOOKED IT &middot; HE WENT &middot; DAY {day} OF BLAKE BEING A HERO
         </span>
         <span>
-          FILE No.&nbsp;BLK-2026-001 &middot; ESCALATION LEVEL: ELEVATED &middot; {clock}
+          FILE No.&nbsp;BLK-2026-001 &middot; STATUS: CLOSED (TRIUMPHANT) &middot; {clock}
         </span>
       </div>
 
       <div className="breaking-banner">
-        <span className="tag">⚡ Breaking Development</span>
+        <span className="tag">🎉 Breaking Development</span>
         <span className="text">
-          Subject has officially responded to the campaign &middot; Full transcript entered into evidence below &middot; Coalition convening emergency session
+          Subject has ATTENDED THE DOCTOR &middot; He went &middot; in person &middot; with his body &middot; The coalition has, against all odds, <em>achieved its purpose</em>
         </span>
-        <span className="time-stamp">7:14 PM &middot; Today</span>
+        <span className="time-stamp">Confirmed &middot; Today</span>
       </div>
 
       <nav className="nav">
@@ -80,36 +80,36 @@ export default function HomePage() {
           <span>Mu Eta Chapter of Phi Mu Alpha</span>
         </div>
         <ul>
-          <li><a href="#stakes" onClick={(e) => { e.preventDefault(); scrollTo("stakes")(); }}>The Stakes</a></li>
+          <li><a href="#stakes" onClick={(e) => { e.preventDefault(); scrollTo("stakes")(); }}>The Scoreboard</a></li>
           <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollTo("testimonials")(); }}>Witnesses</a></li>
-          <li><a href="#plan" onClick={(e) => { e.preventDefault(); scrollTo("plan")(); }}>The Plan</a></li>
-          <li><a href="#consequences" onClick={(e) => { e.preventDefault(); scrollTo("consequences")(); }}>Or Else</a></li>
+          <li><a href="#plan" onClick={(e) => { e.preventDefault(); scrollTo("plan")(); }}>Case Closed</a></li>
+          <li><a href="#consequences" onClick={(e) => { e.preventDefault(); scrollTo("consequences")(); }}>The Cake</a></li>
         </ul>
-        <button className="cta" onClick={scrollTo("final")}>Schedule Blake</button>
+        <button className="cta" onClick={scrollTo("final")}>Celebrate Blake</button>
       </nav>
 
       <section className="hero">
         <div className="hero-grid">
           <div>
             <span className="eyebrow">
-              <span className="star">✦</span> MU ETA CHAPTER &middot; PHI MU ALPHA &middot; OFFICIAL COMMUNIQUE
+              <span className="star">✦</span> MU ETA CHAPTER &middot; PHI MU ALPHA &middot; MISSION ACCOMPLISHED
             </span>
             <h1 className="hero-title">
               Blake,<br />
-              <span className="italic">it&apos;s time to</span><br />
-              make the <span className="red wobble">appointment.</span>
+              <span className="italic">you actually</span><br />
+              went to the <span className="red wobble">doctor.</span>
             </h1>
             <p className="hero-sub">
-              It has been an <em>unreasonable</em> amount of time. We&apos;ve asked nicely. We&apos;ve asked sweetly. We&apos;ve left voicemails. We&apos;ve @&apos;d you in the chapter Discord. We pinged you. You saw the ping. We know you saw the ping. We built a website. Blake has now seen the website. Blake&apos;s official response to the website was <em>&ldquo;Nuh uh.&rdquo;</em> We have entered the next phase. This is the brothers of Mu Eta Chapter of Phi Mu Alpha, your chapter, the one you are president of, united in a single, simple demand. <strong>Book the visit.</strong>
+              It had been an <em>unreasonable</em> amount of time. We asked nicely. We asked sweetly. We built a website. Your official, on-record response was <em>&ldquo;Nuh uh.&rdquo;</em> And then &mdash; against all odds, all precedent, and his own stated position &mdash; Blake <strong>booked the appointment.</strong> And then he did the thing we genuinely did not believe he would do: he couldn&apos;t hear out of his right ear, so he <strong>actually went.</strong> In person. With his body. The brothers of Mu Eta Chapter of Phi Mu Alpha are, at this time, <em>weeping openly.</em>
             </p>
             <div className="cta-row">
               <button className="btn-primary" onClick={scrollTo("final")}>
-                I&apos;ll Book It Now
+                See How It Ended
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" />
                 </svg>
               </button>
-              <button className="btn-ghost" onClick={scrollTo("stakes")}>See The Stakes</button>
+              <button className="btn-ghost" onClick={scrollTo("stakes")}>He Really Did It</button>
             </div>
           </div>
 
@@ -123,9 +123,9 @@ export default function HomePage() {
             </div>
             <div className="meta">
               <span>SUBJECT &middot; BLAKE</span>
-              <span className="red">STATUS: UNSEEN BY DOCTOR</span>
+              <span className="good">SEEN BY DOCTOR ✓</span>
             </div>
-            <div className="stamp">Must<br />See<br />Doctor</div>
+            <div className="stamp">He<br />Went</div>
           </div>
         </div>
       </section>
@@ -134,33 +134,81 @@ export default function HomePage() {
         <div className="exhibit-inner">
           <div className="exhibit-copy">
             <div className="exhibit-label">
-              <span className="num">!</span> New Evidence &middot; Entered Into Record &middot; 7:14 PM Today
+              <span className="num">✓</span> Final Evidence &middot; Case Closed &middot; Today
             </div>
-            <h2>He said <span className="red italic">&ldquo;Nuh uh.&rdquo;</span></h2>
+            <h2>He said <span className="red italic">&ldquo;Nuh uh.&rdquo;</span> Then he booked it. <span className="italic">Then he went.</span></h2>
             <p>
-              We want to be very clear about what has just occurred. The coalition deployed a full public information campaign. The brothers assembled. Jay&apos;s mom weighed in. A <em>website was built.</em> And Blake&apos;s official, on-record, timestamped response was: &ldquo;Nuh uh.&rdquo;
+              For the record, we must acknowledge the dark days. The coalition deployed a full public information campaign. A <em>website was built.</em> And Blake&apos;s official, on-record, timestamped response was: &ldquo;Nuh uh.&rdquo; That message remains entered as <strong>Exhibit A.</strong> Then, at 1:59 PM, the Subject posted four words that reduced multiple brothers to tears &mdash; <em>&ldquo;Made a doctors appointment&rdquo;</em> &mdash; admitted as <strong>Exhibit B.</strong>
             </p>
             <p style={{ marginTop: 16 }}>
-              This message has been preserved, screenshotted, forwarded to the Discord, and is now formally entered as <strong>Exhibit A</strong> in the ongoing proceedings. The coalition notes that &ldquo;Nuh uh&rdquo; is not a medical diagnosis. &ldquo;Nuh uh&rdquo; does not constitute a scheduled appointment. &ldquo;Nuh uh&rdquo; has, if anything, <em>strengthened our resolve.</em>
+              And then came the moment no one in the chapter dared predict. The Subject reported that he <em>couldn&apos;t hear out of his right ear</em> &mdash; and rather than ignore it for nine months, as is tradition, he posted three of the most beautiful words ever entered into this record: <strong>&ldquo;Went to the doctor.&rdquo;</strong> Admitted as <strong>Exhibit C.</strong> The matter is hereby <em>closed, in triumph.</em>
             </p>
           </div>
-          <div className="discord-wrap reveal">
-            <div className="exhibit-stamp">Exhibit A</div>
-            <div className="discord-card">
-              <div className="discord-header"># mu-eta-general &nbsp;&middot;&nbsp; Phi Mu Alpha Sinfonia</div>
-              <div className="discord-msg">
-                <div className="discord-avatar"><div className="avatar-ph">🎺</div></div>
-                <div className="discord-body">
-                  <div className="discord-name-row">
-                    <span className="discord-name">Blake Barnes</span>
-                    <span className="discord-ts">Today at 7:14 PM</span>
+          <div className="exhibit-cards">
+            <div className="discord-wrap reveal">
+              <div className="exhibit-stamp">Exhibit A</div>
+              <div className="discord-card">
+                <div className="discord-header"># mu-eta-general &nbsp;&middot;&nbsp; Phi Mu Alpha Sinfonia</div>
+                <div className="discord-msg">
+                  <div className="discord-avatar"><div className="avatar-ph">🎺</div></div>
+                  <div className="discord-body">
+                    <div className="discord-name-row">
+                      <span className="discord-name">Blake Barnes</span>
+                      <span className="discord-ts">Today at 7:14 PM</span>
+                    </div>
+                    <span className="discord-text"><span className="discord-highlight">Nuh uh</span></span>
                   </div>
-                  <span className="discord-text"><span className="discord-highlight">Nuh uh</span></span>
+                </div>
+                <div className="discord-footnote">
+                  <span>Source: #mu-eta-general &nbsp;&middot;&nbsp; the dark days</span>
+                  <span className="admitted">Admitted: this session</span>
                 </div>
               </div>
-              <div className="discord-footnote">
-                <span>Source: #mu-eta-general &nbsp;&middot;&nbsp; seen by all 23 members</span>
-                <span className="admitted">Admitted: this session</span>
+            </div>
+            <div className="discord-wrap reveal">
+              <div className="exhibit-stamp b">Exhibit B</div>
+              <div className="discord-card">
+                <div className="discord-header"># mu-eta-general &nbsp;&middot;&nbsp; Phi Mu Alpha Sinfonia</div>
+                <div className="discord-msg">
+                  <div className="discord-avatar"><div className="avatar-ph">🎺</div></div>
+                  <div className="discord-body">
+                    <div className="discord-name-row">
+                      <span className="discord-name">Blake Barnes</span>
+                      <span className="discord-ts">Today at 1:59 PM</span>
+                    </div>
+                    <span className="discord-text"><span className="discord-highlight good">Made a doctors appointment</span></span>
+                  </div>
+                </div>
+                <div className="discord-reactions">
+                  <span className="reaction-pill">😄 <span className="count">7</span></span>
+                  <span className="reaction-pill">🎉 <span className="count">5</span></span>
+                </div>
+                <div className="discord-footnote">
+                  <span>Source: #mu-eta-general &nbsp;&middot;&nbsp; Phase 1 complete</span>
+                  <span className="admitted good">Admitted: this session</span>
+                </div>
+              </div>
+            </div>
+            <div className="discord-wrap reveal">
+              <div className="exhibit-stamp b">Exhibit C</div>
+              <div className="discord-card">
+                <div className="discord-header"># mu-eta-general &nbsp;&middot;&nbsp; Phi Mu Alpha Sinfonia</div>
+                <div className="discord-msg">
+                  <div className="discord-avatar"><div className="avatar-ph">🎺</div></div>
+                  <div className="discord-body">
+                    <div className="discord-name-row">
+                      <span className="discord-name">Blake Barnes</span>
+                      <span className="discord-ts">Today</span>
+                    </div>
+                    <span className="discord-text"><span className="discord-highlight good">Couldn&apos;t hear out of my right ear today</span></span>
+                    <br />
+                    <span className="discord-text"><span className="discord-highlight good">Went to the doctor</span></span>
+                  </div>
+                </div>
+                <div className="discord-footnote">
+                  <span>Source: #mu-eta-general &nbsp;&middot;&nbsp; Phase 2 complete</span>
+                  <span className="admitted good">He actually went</span>
+                </div>
               </div>
             </div>
           </div>
@@ -170,10 +218,10 @@ export default function HomePage() {
       <div className="marquee" ref={marqueeRef}>
         <div className="marquee-track">
           <span>
-            OR ELSE <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> <span className="ghost">OR ELSE</span> <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> <span className="ghost">OR ELSE</span> <span className="dot">✦</span>
+            HE WENT <span className="dot">✦</span> MISSION COMPLETE <span className="dot">✦</span> <span className="ghost">HE WENT</span> <span className="dot">✦</span> WE ARE SO BACK <span className="dot">✦</span> HE WENT <span className="dot">✦</span> <span className="ghost">MISSION COMPLETE</span> <span className="dot">✦</span>
           </span>
           <span>
-            OR ELSE <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> <span className="ghost">OR ELSE</span> <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> OR ELSE <span className="dot">✦</span> <span className="ghost">OR ELSE</span> <span className="dot">✦</span>
+            HE WENT <span className="dot">✦</span> MISSION COMPLETE <span className="dot">✦</span> <span className="ghost">HE WENT</span> <span className="dot">✦</span> WE ARE SO BACK <span className="dot">✦</span> HE WENT <span className="dot">✦</span> <span className="ghost">MISSION COMPLETE</span> <span className="dot">✦</span>
           </span>
         </div>
       </div>
@@ -181,37 +229,37 @@ export default function HomePage() {
       <section id="stakes" className="stakes-section">
         <div className="container">
           <div className="section-label">
-            <span className="num">01</span> The Stakes <span className="line" /> What Has Already Happened
+            <span className="num">01</span> The Scoreboard <span className="line" /> What Has Already Happened
           </div>
-          <h2 className="section-title reveal">Every day Blake waits, <span className="italic">things get weirder.</span></h2>
+          <h2 className="section-title reveal">Every metric just flipped, <span className="italic">in his favor.</span></h2>
           <p className="hero-sub reveal" style={{ color: "rgba(242,233,213,0.75)", maxWidth: "60ch" }}>
-            Independently verified by a panel of three friends and a group chat called &ldquo;Blake&apos;s Knee Situation 2026&rdquo;. The numbers do not lie. The numbers are, in fact, lying flat on the couch right now.
+            Independently verified by a panel of three friends and a group chat formerly called &ldquo;Blake&apos;s Cough Situation 2026&rdquo;, recently renamed &ldquo;WE ARE SO BACK&rdquo;. The numbers do not lie. The numbers are, for once, deeply optimistic.
           </p>
 
           <div className="stakes-grid">
             <div className="stake-card reveal">
               <div className="stake-num">{stake0}</div>
-              <div className="stake-title">Days Since<br />&ldquo;I&apos;ll Call Tomorrow&rdquo;</div>
+              <div className="stake-title">Seconds Of<br />Collective Pride</div>
               <div className="stake-body">
-                Most recently uttered while eating a cold slice of pizza standing up over the sink. Tomorrow has not come. Tomorrow is, statistically, beginning to suspect it was lied to.
+                Accumulating in real time since the words &ldquo;Went to the doctor&rdquo; hit the channel. Every tick is another brother quietly tearing up. The number only goes up. So does the pride.
               </div>
               <div className="counter"><span className="live-dot" />Live count &middot; auto-incrementing</div>
             </div>
             <div className="stake-card reveal">
               <div className="stake-num">∞</div>
-              <div className="stake-title">Friends Worrying<br />In Silence</div>
+              <div className="stake-title">Friends Quietly<br />Proud</div>
               <div className="stake-body">
-                A non-trivial fraction now begin every brunch with &ldquo;so, has Blake&hellip;?&rdquo; before trailing off and ordering a second coffee. We are tired. The brunches are tired. The coffee is tired.
+                A non-trivial fraction now begin every brunch with &ldquo;did you hear Blake&hellip;?&rdquo; before beaming and ordering a celebratory second coffee. We are relieved. The brunches are relieved. The coffee tastes better.
               </div>
               <div className="counter"><span className="live-dot" />Statistically significant</div>
             </div>
             <div className="stake-card reveal">
               <div className="stake-num">1</div>
-              <div className="stake-title">Mysterious<br />&ldquo;Thing&rdquo;</div>
+              <div className="stake-title">Appointment<br />Attended</div>
               <div className="stake-body">
-                Blake has referenced &ldquo;the thing on my [REDACTED]&rdquo; exactly seven times this quarter and refuses to clarify. We are reasonably sure it is nothing. We are unreasonably sure it is something.
+                Booked. Confirmed. And &mdash; crucially &mdash; attended. Blake walked in, in person, as a complete unit, because his right ear staged a quiet rebellion. The asterisk has been removed. There is no asterisk. <em>He went.</em>
               </div>
-              <div className="counter"><span className="live-dot" />Specialist required</div>
+              <div className="counter"><span className="live-dot" />Mission complete</div>
             </div>
           </div>
         </div>
@@ -222,15 +270,15 @@ export default function HomePage() {
           <div className="section-label">
             <span className="num">02</span> The Witnesses <span className="line" /> Endorsed by Concerned Parties
           </div>
-          <h2 className="section-title reveal">Even <span className="italic">Jay&apos;s mom</span> is on the record.</h2>
+          <h2 className="section-title reveal">Even <span className="italic">Jay&apos;s mom</span> is celebrating.</h2>
           <p className="hero-sub reveal" style={{ maxWidth: "62ch" }}>
-            A panel of medical professionals, the brothers of Mu Eta, and one very real mom have weighed in. All quotes lightly paraphrased. All concern: 100% authentic.
+            A panel of medical professionals, the brothers of Mu Eta, and one very real mom have weighed in on the news. All quotes lightly paraphrased. All pride: 100% authentic. All of them no longer nagging, because he actually went.
           </p>
 
           <div className="testimonials-grid">
             <div className="testimonial tilt-l reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">I have not personally examined Blake, but I am willing to, in this hypothetical scenario, say Blake should go see a doctor soon.</div>
+              <div className="quote">I have not personally examined Blake, but I am told he booked an appointment AND attended it after losing hearing in his right ear. Clinically speaking, that is flawless execution. I could not have done it better myself.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
@@ -241,7 +289,7 @@ export default function HomePage() {
             </div>
             <div className="testimonial tilt-r reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">I did not raise Blake, but I have heard about Blake, and I am telling you right now, as a mother, go to the doctor. I will not elaborate further. Go.</div>
+              <div className="quote">I did not raise Blake, but I have heard about Blake, and I am telling you right now, as a mother: he booked it, and then he went. He attended. I am vindicated. I am proud. I will not elaborate further. He went.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
@@ -251,8 +299,8 @@ export default function HomePage() {
               </div>
             </div>
             <div className="testimonial tilt-l reveal">
-              <div className="stars">★★★★☆</div>
-              <div className="quote">Four stars because the clinic gives you a sticker. The fifth star is contingent on Blake actually arriving at the clinic to receive said sticker.</div>
+              <div className="stars">★★★★★</div>
+              <div className="quote">I previously withheld the fifth star pending Blake&apos;s actual arrival at the clinic. He arrived. The fifth star is hereby awarded. The sticker was, by all accounts, received. The system works.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
@@ -263,7 +311,7 @@ export default function HomePage() {
             </div>
             <div className="testimonial tilt-r reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">Please, I am not Blake, please stop asking me to go to the doctor. I am, however, Blake&apos;s friend, and I am begging you, for the love of all that is good and decent, make the appointment.</div>
+              <div className="quote">Please, I am not Blake, please stop congratulating me on the appointment. I am, however, Blake&apos;s friend, and I am relieved to report that he has walked into the building. I am no longer begging. I am simply, finally, at peace.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
@@ -274,7 +322,7 @@ export default function HomePage() {
             </div>
             <div className="testimonial tilt-l reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">Blake, if you make a doctor appointment, you might actually win poker night. Like me. The correlation between your medical neglect and your inability to read a flop is, at this point, statistically undeniable.</div>
+              <div className="quote">Blake went to the doctor and I am almost certain he will now win poker night. The correlation between his medical neglect and his inability to read a flop was statistically undeniable. He fixed the ear. He fixes the flop. Simple.</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
@@ -285,12 +333,12 @@ export default function HomePage() {
             </div>
             <div className="testimonial tilt-r reveal">
               <div className="stars">★★★★★</div>
-              <div className="quote">From a purely clinical standpoint, I have no jurisdiction here. From a brotherly standpoint, however, I am prepared to drive Blake to the appointment, sit in the waiting room, and kiss his cheek.</div>
+              <div className="quote">Guys. I&apos;m genuinely overwhelmed. The campaign, the testimonials, a literal website, I had no idea you all cared this much about me booking my appointment. Truly, thank you, it means everything&hellip; wait. It&apos;s Blake&apos;s appointment? This is about Blake? Right. Yes. The Alex Kos Fallacy&hellip;</div>
               <div className="credit">
                 <div className="avatar">PHOTO</div>
                 <div>
-                  <div className="name">Alex</div>
-                  <div className="title">Designated Driver &middot; Volunteer &middot; unc</div>
+                  <div className="name">Alex Kos</div>
+                  <div className="title">Designated Driver &middot; Believed This Was About Him</div>
                 </div>
               </div>
             </div>
@@ -301,28 +349,28 @@ export default function HomePage() {
       <section id="plan" className="plan-section">
         <div className="container">
           <div className="section-label">
-            <span className="num">03</span> The Plan <span className="line" /> So Easy It&apos;s Almost Insulting
+            <span className="num">03</span> Case Closed <span className="line" /> All Five Steps, Done
           </div>
-          <h2 className="section-title reveal">Five steps. <span className="italic">No catch.</span></h2>
+          <h2 className="section-title reveal">Every single step. <span className="italic">Complete.</span></h2>
           <p className="hero-sub reveal" style={{ maxWidth: "62ch" }}>
-            We&apos;ve broken it down for you, Blake. Each step takes less time than that TikTok loop you watched eleven times last night. We checked. We were on the couch next to you.
+            Here&apos;s the beautiful part, Blake: you did all of it. The phone was located. The doctor was found. The call was made. The appointment was attended. And you even told us. There is nothing left on this list. We are framing the list.
           </p>
 
           <div className="plan-steps">
-            <PlanStep num="01" title="Locate Your Phone" difficulty={1}>
-              It&apos;s right there. <em>Right there.</em> You are reading this on it. Excellent. Step one: complete. Look at you go.
+            <PlanStep num="01" title="Locate Your Phone" done>
+              Done. You found it. You are, in fact, still holding it. A foundational triumph and the bedrock of everything that followed.
             </PlanStep>
-            <PlanStep num="02" title="Open The Contacts App" difficulty={1}>
-              Or use your insurance website. Or that little card in your wallet. Or just type &ldquo;doctor near me&rdquo;. The internet has been preparing for this exact moment for years.
+            <PlanStep num="02" title="Find A Doctor" done>
+              Done. A real clinic. A real number. Pulled from the insurance website, the little card, or simply &ldquo;doctor near me&rdquo;. The internet did its part. So did you.
             </PlanStep>
-            <PlanStep num="03" title="Make The Call. Or Click. Or Tap." difficulty={2}>
-              Pick whichever interaction modality terrifies you least. We accept all of them. <em>The doctor will accept all of them.</em> Communication has come a long way and so have you.
+            <PlanStep num="03" title="Make The Call. Book The Visit." done>
+              <em>Done.</em> The single most surprising development of the calendar year. At 1:59 PM, Blake booked the appointment. Historians will note the date.
             </PlanStep>
-            <PlanStep num="04" title="Show Up. With Your Body. Inside The Building." difficulty={4}>
-              We acknowledge this is the hard one. Pack a snack. Wear the pants with the deep pockets. Bring headphones. <em>Crucially:</em> arrive in person, in physical 3D space, as a complete unit.
+            <PlanStep num="04" title="Show Up. With Your Body. Inside The Building." done>
+              <em>Done.</em> The big one. The hard one. He showed up, in person, in physical 3D space, as a complete unit, because his right ear staged a rebellion and Blake, heroically, responded. We are still not over it.
             </PlanStep>
-            <PlanStep num="05" title="Tell Us You Did It" difficulty={1}>
-              Text the chapter Discord. Send a single thumbs-up. We will throw, and this is a promise, a respectful, low-key, but genuinely heartfelt little party. There will be a cake. We have already picked out the cake.
+            <PlanStep num="05" title="Tell Us You Went" done>
+              Done. He told us. <em>&ldquo;Went to the doctor.&rdquo;</em> Three words. We are framing them. The cake has been ordered. We always said there would be a cake.
             </PlanStep>
           </div>
         </div>
@@ -331,12 +379,12 @@ export default function HomePage() {
       <section id="consequences" className="consequences-section">
         <div className="container">
           <div className="section-label">
-            <span className="num">04</span> Or Else <span className="line" /> Consequences (Vague)
+            <span className="num">04</span> The Fine Print <span className="line" /> Terms Of Celebration
           </div>
-          <div className="classified-stamp">⚠ Classified Briefing</div>
-          <h2 className="section-title reveal">If Blake does not comply, <span className="italic">the following will occur:</span></h2>
+          <div className="classified-stamp">🎉 Celebration Order</div>
+          <h2 className="section-title reveal">Blake attended. <span className="italic">The following is now in effect:</span></h2>
           <p className="hero-sub reveal" style={{ color: "rgba(242,233,213,0.78)", maxWidth: "60ch" }}>
-            We are legally and emotionally unable to disclose the specifics. But trust us, and we cannot stress this part enough, it is something. The brothers have convened. The brothers have voted. The motion passed.
+            We are legally and emotionally unable to fully disclose the specifics. But trust us, and we cannot stress this part enough, it involves cake. The brothers have convened. The brothers have voted. The motion passed unanimously. The condition has been met.
           </p>
 
           <div className="redacted-doc reveal">
@@ -345,15 +393,15 @@ export default function HomePage() {
               <span>CLEARANCE: DISCORD</span>
             </div>
             <p>
-              RE: Plan of Action Pursuant to Blake&apos;s Continued <span className="black">aggressive procrastination regarding</span> medical neglect. <strong>ADDENDUM:</strong> Subject has since responded to official coalition communications with the phrase <span className="black">&ldquo;Nuh uh&rdquo;</span>, which has been admitted as Exhibit A and has elevated this matter to Priority Status.
+              RE: Plan of Action Pursuant to Blake&apos;s <span className="black">long-awaited and frankly heroic</span> medical follow-through. <strong>ADDENDUM:</strong> Subject booked the appointment (<span className="black">Exhibit B</span>) and subsequently <span className="black">attended it</span> after reporting an inability to hear out of his right ear (<span className="black">Exhibit C: &ldquo;Went to the doctor&rdquo;</span>), elevating this matter to Mission Accomplished.
             </p>
             <p>
-              Should the Subject (&ldquo;Blake&rdquo;) fail to attend an appointment by the designated deadline, the Coalition is authorized to initiate <span className="black">a slow-burn, deeply uncomfortable</span> response, which may include but is not limited to: <span className="black">an intervention involving baked goods</span>, <span className="black">passive-aggressive Spotify playlist</span>, and, in worst-case scenarios, <span className="black">the silent treatment from the houseplant</span>.
+              Confirmation having been received that the Subject (&ldquo;Blake&rdquo;) has <em>attended</em> the booked appointment, the Coalition is hereby authorized to initiate <span className="black">a warm, deeply heartfelt</span> response, which may include but is not limited to: <span className="black">an intervention involving baked goods</span>, <span className="black">a celebratory Spotify playlist</span>, and, in best-case scenarios, <span className="black">a respectful nod from the houseplant</span>.
             </p>
             <p>
-              Further escalation may involve <span className="black">a heartfelt letter read aloud at brunch</span>, the public deployment of <span className="black">embarrassing childhood photos</span>, the controlled release of <span className="black">certain </span>photographs <span className="black">obtained during the trip to that one </span>island,<span className="black"> the name of which we are </span><span className="black"> contractually unable to print here</span>, and ultimately <span className="black">[redacted, Appendix C, page 47]</span>.
+              Further celebration may involve <span className="black">a heartfelt letter read aloud at brunch</span>, the public deployment of <span className="black">flattering childhood photos</span>, the controlled release of <span className="black">certain </span>photographs <span className="black">obtained during the trip to that one </span>island,<span className="black"> the name of which we are </span><span className="black"> contractually unable to print here</span>, and ultimately <span className="black">[redacted, Appendix C, page 47]</span>.
             </p>
-            <p>The Coalition wishes to be clear: this is not a threat. <em>It is a promise.</em> A very loving, deeply concerned, slightly unhinged promise.</p>
+            <p>The Coalition wishes to be clear: this was never a threat. <em>It was a promise.</em> A very loving, deeply proud, slightly unhinged promise. He showed up. The promise is hereby activated. Bring the cake.</p>
             <div className="footer">
               <span>SIGNED &middot; MU ETA CHAPTER, PHI MU ALPHA</span>
               <span>FILE BLK-2026-001 &middot; PG 1 OF ∞</span>
@@ -365,9 +413,9 @@ export default function HomePage() {
       <section className="timeline-section">
         <div className="container">
           <div className="section-label">
-            <span className="num">05</span> The Aftermath <span className="line" /> A Day In The Life, Post-Appointment
+            <span className="num">05</span> The Aftermath <span className="line" /> A Day In The Life, Post-Attendance
           </div>
-          <h2 className="section-title reveal">Imagine, <span className="italic">if you will,</span> a Blake who has been to the doctor.</h2>
+          <h2 className="section-title reveal">No need to imagine. <span className="italic">This is</span> a Blake who has gone.</h2>
 
           <div className="timeline">
             <div className="tl-step active reveal">
@@ -401,17 +449,17 @@ export default function HomePage() {
       <section id="final" className="final-cta-section">
         <div style={{ position: "relative" }}>
           <h2>
-            <span className="glitch" data-text="CALL.">CALL.</span>{" "}
-            <span className="glitch" data-text="THE.">THE.</span>{" "}
-            <span className="glitch" data-text="DOCTOR.">DOCTOR.</span>
+            <span className="glitch" data-text="HE.">HE.</span>{" "}
+            <span className="glitch" data-text="ACTUALLY.">ACTUALLY.</span>{" "}
+            <span className="glitch" data-text="WENT.">WENT.</span>
           </h2>
           <div style={{ position: "relative", fontFamily: "var(--font-instrument-serif), serif", fontStyle: "italic", fontSize: 28, opacity: 0.9, marginBottom: 12 }}>
-            There is, genuinely, no remaining reason not to.
+            He booked it. He went. There is, genuinely, nothing left to nag about. We are stunned.
           </div>
-          <button className="phone-num" onClick={() => alert("You did it. You actually clicked it. Now do the real thing. Love you.")}>
-            📞 1-800-BLAKE-GO
+          <button className="phone-num" onClick={() => alert("He went. He actually went. The cake is real and it is coming. We are so proud of you, Blake. Love you.")}>
+            📞 1-800-HE-WENT
           </button>
-          <div className="micro">By scheduling, you agree to receive one (1) celebratory cake.</div>
+          <div className="micro">Cake status: ordered. He earned it. Every crumb.</div>
         </div>
       </section>
 
@@ -426,25 +474,26 @@ export default function HomePage() {
           </div>
           <div>
             <h4>Resources</h4>
-            <p>Insurance Card &middot; TBD</p>
-            <p>Doctor&apos;s Number &middot; TBD</p>
+            <p>Insurance Card &middot; Located</p>
+            <p>Doctor&apos;s Number &middot; Dialed</p>
+            <p>Right Ear &middot; Examined</p>
             <p>Excuses &middot; None Left</p>
           </div>
           <div>
             <h4>Contact</h4>
             <p>blake@please.health</p>
-            <p>1-800-BLAKE-GO</p>
-            <p>Or just respond to the ping</p>
-            <p>We know you saw it</p>
+            <p>1-800-HE-WENT</p>
+            <p>He told us when he went</p>
+            <p>The cake is en route</p>
           </div>
           <div>
             <h4>Coalition Hours</h4>
             <p>24 / 7 / 365</p>
-            <p>Especially 3am</p>
-            <p>We Will Find You</p>
+            <p>Currently: Celebrating</p>
+            <p>We Are So Back</p>
           </div>
           <div className="disclaimer">
-            This is a satirical campaign created with love by the brothers of Mu Eta Chapter of Phi Mu Alpha, of which Blake is chapter president and has been repeatedly @&apos;d on Discord. No actual Blakes were threatened in the making of this site. All testimonials are paraphrased. All statistics are vibes-based. All concern is, however, completely sincere. If you, or a Blake you love, have been putting off a routine appointment, this is your sign. 2026 Mu Eta Chapter, Phi Mu Alpha.
+            This is a satirical campaign created with love by the brothers of Mu Eta Chapter of Phi Mu Alpha, of which Blake is chapter president and has, at long last, both booked AND attended a doctor&apos;s appointment. No actual Blakes were threatened in the making of this site. All testimonials are paraphrased. All statistics are vibes-based. All pride is, however, completely sincere. Phase 1 (booking) and Phase 2 (actually going) are both complete; the case is closed in triumph. If you, or a Blake you love, have been putting off a routine appointment, let this be your sign &mdash; he couldn&apos;t hear out of his right ear and he still made it, so you can too. 2026 Mu Eta Chapter, Phi Mu Alpha.
           </div>
         </div>
       </footer>
@@ -456,28 +505,34 @@ function PlanStep({
   num,
   title,
   difficulty,
+  done,
   children,
 }: {
   num: string;
   title: string;
-  difficulty: number;
+  difficulty?: number;
+  done?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <div className="plan-step reveal">
+    <div className={done ? "plan-step done reveal" : "plan-step reveal"}>
       <div className="num">{num}</div>
       <div className="body">
         <h3>{title}</h3>
         <p>{children}</p>
       </div>
-      <div className="difficulty">
-        DIFFICULTY
-        <div className="bars">
-          {[0, 1, 2, 3, 4].map((i) => (
-            <div key={i} className={i < difficulty ? "bar on" : "bar"} />
-          ))}
+      {done ? (
+        <div className="done-badge"><span className="check">✓</span> Done</div>
+      ) : (
+        <div className="difficulty">
+          DIFFICULTY
+          <div className="bars">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <div key={i} className={i < (difficulty ?? 0) ? "bar on" : "bar"} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
