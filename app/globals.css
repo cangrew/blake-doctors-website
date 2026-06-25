@@ -145,6 +145,7 @@ h1.hero-title .wobble { display: inline-block; animation: wobble 4s ease-in-out 
   font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
 }
 .blake-card .meta .red { color: var(--blood); font-weight: 700; }
+.blake-card .meta .good { color: var(--green); font-weight: 700; }
 .blake-card .stamp {
   position: absolute; top: -18px; right: -18px;
   background: var(--green); color: var(--cream);
@@ -308,7 +309,7 @@ h2.section-title .italic { font-family: var(--font-instrument-serif); font-style
 
 .final-cta-section { background: var(--green); color: var(--cream); text-align: center; padding: 96px 32px; position: relative; overflow: hidden; }
 .final-cta-section::before {
-  content: 'SHOW UP · GO · SHOW UP · GO · SHOW UP · GO · SHOW UP · GO · SHOW UP · GO · SHOW UP · GO ';
+  content: 'HE WENT · WE WON · HE WENT · WE WON · HE WENT · WE WON · HE WENT · WE WON · HE WENT · WE WON ';
   position: absolute; inset: -40px; font-family: var(--font-archivo-black);
   font-size: 180px; color: rgba(255,255,255,0.05);
   white-space: nowrap; overflow: hidden;
